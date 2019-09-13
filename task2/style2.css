@@ -1,0 +1,59 @@
+.menu {
+	text-align: center;	
+	margin-top: 20px;
+}
+
+.menu__item {
+	font-size: 20px;
+	font-weight: 800;
+	color: #789;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 40px;
+
+}
+
+.menu__item:hover {
+	text-decoration: underline;
+}
+
+.burger {
+	display: none;
+	width: 40px;
+	height: 30px;
+	position: relative;
+    cursor: pointer;
+}
+
+.burger__item {
+	display: block;
+	position: absolute;
+	height: 7px;
+    width: 100%;
+    border-radius: 9px;
+    background: #789;
+}
+
+.burger__item_top{
+	top: 0;
+}
+
+.burger__item_middle {
+	top: 13px;
+}
+
+.burger__item_bottom {
+	top: 26px;
+}
+
+@media (max-width:961px) {
+
+	.menu {
+		display: none;
+	}
+
+	.burger {
+		display: block;
+	}
+
+}
